@@ -5,6 +5,9 @@
     <div class="row">
         <div class="col-sm-6 mx-auto">
             <h4>Login Here!!!</h4>
+            {% for message in messages %}
+            <h6 class="text-danger">{{message}}</h6>
+            {% endfor %}
             <form action="" method="post">
                 {% csrf_token %}
                 <div class="form-group">
